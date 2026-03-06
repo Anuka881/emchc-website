@@ -1,0 +1,152 @@
+ <!doctype html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Europe Mongolian Cultural Heritage Center</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a class="logo" href="#top">EMCHC</a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">Бидний тухай</a>
+        <a href="#activities" class="nav__link">Үйл ажиллагаа</a>
+        <a href="#news-section" class="nav__link">Мэдээ</a>
+        <a href="#contact" class="nav__link">Холбоо</a>
+      </nav>
+
+      <div class="header__right">
+        <div class="lang">
+          <button class="lang__btn is-active" id="mnBtn" type="button">MN</button>
+          <button class="lang__btn" id="enBtn" type="button">EN</button>
+        </div>
+
+        <button class="burger" id="burger" type="button" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" id="heroBg" aria-hidden="true"></div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <div class="hero__glass reveal">
+        <p class="hero__kicker" id="heroKicker">EU • MN Cultural Bridge</p>
+
+        <h1 class="hero__title" id="heroTitle">
+          ЕВРОП МОНГОЛЫН<br>СОЁЛЫН ТӨВ
+        </h1>
+
+        <p class="hero__desc" id="heroDesc">
+          Европ-Монгол өв соёлын төв нь 2026 онд байгуулагдсан. Монголын биет болон биет бус өв соёлыг Европ тивд сурталчилах зорилготой ашгийн бус соёлын байгууллага юм.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#about" id="ctaAbout">Бидний тухай</a>
+          <a class="btn btn--ghost" href="#activities" id="ctaAct">Үйл ажиллагаа</a>
+          <a class="btn btn--ghost" href="#news-section" id="ctaNews">Мэдээ мэдээлэл</a>
+        </div>
+
+        <div class="hero__meta">
+          <span class="dot"></span>
+          <span id="heroMeta">Сүүлд шинэчлэгдсэн: өнөөдөр</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__dots" id="heroDots" aria-label="Hero carousel dots"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section__title reveal">Бидний тухай</h2>
+      <p class="section__text reveal">
+        EMCC нь Европ дахь монголчууд болон сонирхогчдын хамтын ажиллагааг өргөжүүлж,
+        монгол өв соёл, уламжлал, хэл, урлагийг танилцуулах зорилготой.
+      </p>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section class="news-section" id="news-section">
+    <div class="container">
+      <h2>Мэдээ</h2>
+      <div id="news"></div>
+    </div>
+  </section>
+
+  <!-- CARDS -->
+  <section class="section section--soft" id="activities">
+    <div class="container">
+      <h2 class="section__title reveal">Үйл ажиллагаа</h2>
+
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card__img" style="background-image:url('assets/images/cards/card-01.jpg')"></div>
+          <h3 class="card__title">Арга хэмжээ</h3>
+          <p class="card__text">Үзэсгэлэн, тоглолт, уулзалт, фестиваль.</p>
+          <a class="card__link" href="events.html">Дэлгэрэнгүй</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img" style="background-image:url('assets/images/cards/card-02.jpg')"></div>
+          <h3 class="card__title">Сургалт</h3>
+          <p class="card__text">Хэл, гар урлал, хөгжмийн сургалт.</p>
+          <a class="card__link" href="training.html">Дэлгэрэнгүй</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card__img" style="background-image:url('assets/images/cards/card-03.jpg')"></div>
+          <h3 class="card__title">Хамтын ажиллагаа</h3>
+          <p class="card__text">Европын байгууллагуудтай соёлын солилцоо.</p>
+          <a class="card__link" href="partners.html">Дэлгэрэнгүй</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+   <!-- BIG BANNER -->
+<section class="banner" id="featured">
+  <div class="container banner__inner reveal">
+    <h2 class="banner__title">Онцгой</h2>
+    <p class="banner__text">Шинэ арга хэмжээ, зарлал, нийтлэлийг эндээс.</p>
+
+    <!-- энд latest 3-4 пост гарна -->
+    <div id="featuredPosts" class="featured-grid"></div>
+  </div>
+</section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section__title reveal">Холбоо барих</h2>
+      <form class="form reveal" id="contactForm">
+        <input class="input" name="name" placeholder="Нэр" required />
+        <input class="input" name="email" type="email" placeholder="Имэйл" required />
+        <textarea class="input" name="msg" rows="4" placeholder="Мессеж" required></textarea>
+        <button class="btn btn--primary" type="submit">Илгээх</button>
+        <p class="form__status" id="formStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> EMCHC</p>
+      <a href="#top" class="footer__top">Дээш</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
