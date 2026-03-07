@@ -98,7 +98,7 @@ if (mnBtn && enBtn) {
 
     if (lang === "en") {
       heroKicker.textContent = "EU • MN Cultural Bridge";
-      heroTitle.innerHTML = "EUROPE MONGOLIAN<br>CULTURAL CENTER";
+      heroTitle.innerHTML = "EUROPE MONGOLIAN<br>CULTURAL HERITAGE CENTER";
       heroDesc.textContent =
         "A cultural hub connecting Mongolian heritage with Europe through events, workshops, exhibitions, and community programs.";
       ctaAbout.textContent = "About us";
@@ -106,7 +106,7 @@ if (mnBtn && enBtn) {
       ctaNews.textContent = "News";
     } else {
       heroKicker.textContent = "EU • MN Cultural Bridge";
-      heroTitle.innerHTML = "ЕВРОП МОНГОЛЫН<br>СОЁЛЫН ТӨВ";
+      heroTitle.innerHTML = "ЕВРОП МОНГОЛЫН<br>ӨВ СОЁЛЫН ТӨВ";
       heroDesc.textContent =
         "Европ дахь монгол соёлыг түгээн дэлгэрүүлэх, соёлын солилцоог дэмжих, арга хэмжээ, сургалт, үзэсгэлэн, уулзалтаар дамжуулан олон нийттэй холбох төв.";
       ctaAbout.textContent = "Бидний тухай";
@@ -219,4 +219,5 @@ if (featuredEl) {
   }).catch(() => {
     featuredEl.innerHTML = `<p style="opacity:.8;">Онцгой хэсэг ачаалсангүй.</p>`;
   });
+
 }
